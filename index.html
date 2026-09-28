@@ -7,49 +7,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Шапка з навігацією -->
-    <header>
-        <h1>Каталог настільних ігор</h1>
-        <nav>
-            <a href="#filters">Фільтри</a>
-            <a href="#games">Список ігор</a>
+    <header class="header">
+        <h1 class="header-title">Каталог настільних ігор</h1>
+        <nav class="header-nav">
+            <a href="#filters" class="nav-link">Фільтри</a>
+            <a href="#games" class="nav-link">Список ігор</a>
         </nav>
     </header>
 
-    <!-- Основний вміст -->
-    <main>
-        <!-- Блок фільтрів -->
-        <section id="filters">
+    <main class="main-content">
+        <section id="filters" class="section">
             <h2>Фільтри</h2>
-            <form action="#" method="GET">
+            <form action="#" method="GET" class="filter-form">
                 <label for="player-count">Кількість гравців:</label>
-                <input type="number" id="player-count" name="players" min="1" max="10">
+                <input type="number" id="player-count" name="players" min="1" max="10" class="filter-input">
             </form>
         </section>
 
-        <!-- Список карток ігор -->
-        <section id="games">
+        <section id="games" class="section">
             <h2>Ігри</h2>
             
-            <article>
+            <article class="card">
                 <h3>Каркассон</h3>
-                <img src="assets/img/carcassonne.jpg" alt="Коробка настільної гри Каркассон">
+                <img src="assets/img/carcassonne.jpg" alt="Коробка настільної гри Каркассон" class="card-img">
                 <p>Класична гра на вибудовування міст та доріг.</p>
             </article>
 
-            <article>
+            <article class="card">
                 <h3>Манчкін</h3>
-                <img src="assets/img/munchkin.jpg" alt="Картка з настільної гри Манчкін">
+                <img src="assets/img/munchkin.jpg" alt="Картка з настільної гри Манчкін" class="card-img">
                 <p>Весела карткова гра про зачистку підземель.</p>
             </article>
+            
         </section>
     </main>
 
-    <!-- Підвал -->
-    <footer>
+    <footer class="footer">
         <p>Виконав: Ілля Гончар, 2026. Навчальний проєкт.</p>
     </footer>
-
-    <script src="js/app.js"></script>
 </body>
 </html>
